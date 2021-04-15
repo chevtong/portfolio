@@ -35,7 +35,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .nav-links {
   list-style-type: none;
@@ -51,7 +51,16 @@ nav {
   color: var(--blue);
   font-weight: 500;
   font-size: 1.3rem;
- 
+  transition: all .5s ease-in-out;
+  
+  padding: .5rem;
+}
+.nav-links li a:hover{
+  color:var(--yellow);
+}
+.nav-active{
+  border-bottom: 5px solid var(--yellow);
+  /* padding: .5rem; */
 }
 
 .nav-icon {
@@ -72,28 +81,19 @@ nav {
   color: var(--yellow);
   text-transform: uppercase;
   font-size: 144px;
-  text-shadow: 10px 8px var(--blue);
+  text-shadow: -13px 13px var(--blue);
   padding: 0.5rem;
-  
-}
-.name-animation{
-  animation: text-shadow-pop-bl 2s both;
+ 
 }
 
-@keyframes text-shadow-pop-bl {
-  0% {
-    text-shadow: 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    text-shadow: -1px 1px var(--blue), -2px 2px var(--blue), -3px 3px var(--blue), -4px 4px var(--blue), -5px 5px var(--blue), -6px 6px var(--blue), -7px 7px var(--blue), -8px 8px var(--blue),-9px 9px var(--blue),-10px 10px var(--blue);
-    transform: translateX(8px) translateY(-8px);
-  }
-}
+
 
 .title-container {
   opacity: 0.25;
   padding-left: 13%;
+ display: grid;
+ grid-template-columns: auto auto;
+ grid-template-rows: auto auto;
 }
 .title-container h1 {
   color: #f4a817;
@@ -101,6 +101,7 @@ nav {
   line-height: 80%;
   animation: appear 1s 1 ease-in-out;
 }
+
 .circle-bg1 {
   width: 35%;
   position: absolute;
@@ -238,7 +239,7 @@ nav {
    
 
 /* contacts section css start */
-.contain-title {
+.contact-title {
   font-size: 48px;
 }
 
@@ -304,20 +305,32 @@ input:focus, textarea:focus{
 
 .form-circle1-container{
   position: absolute;
-  bottom:0;
-  right: 0;
+  bottom:5%;
+  left: 4%;
 }
 .form-circle2-container{
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 1%;
+  left: 1%;
 }
 .form-circle1, .form-circle2{
   width: 100%;
 }
+.form-circle1{
+  animation: rotate-center 8s linear infinite both;
+}
+.form-circle2{
+  
 
-
-
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 footer {
@@ -329,16 +342,20 @@ footer {
 }
 footer a{
   color: white;
+  text-transform: capitalize;
 }
 footer a:hover{
   color: var(--light-yellow);
 }
 
 
+/* class for animation and keyframes */
+.name-animation{
+  animation: text-shadow-pop-bl 1s both;
+}
 .animation{
   animation: tracking-in-expand .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -362,6 +379,20 @@ footer a:hover{
     opacity: 1;
   }
 }
+@keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px var(--blue), -2px 2px var(--blue), -3px 3px var(--blue), -4px 4px var(--blue), -5px 5px var(--blue), -6px 6px var(--blue), -7px 7px var(--blue), 
+                  -8px 8px var(--blue),-9px 9px var(--blue),-10px 10px var(--blue),-11px 11px var(--blue),-12px 12px var(--blue),-13px 13px var(--blue);
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+
+
+
 
 
 
@@ -370,7 +401,7 @@ footer a:hover{
   .line {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: var(--blue);
     margin: 5px;
   }
   nav {
@@ -394,6 +425,7 @@ footer a:hover{
     -webkit-clip-path: circle(100px at 90% -30%);
     transition: all 1s ease-out;
     pointer-events: none;
+    
   }
   .nav-links.open {
     clip-path: circle(1500px at 90% -10%);
