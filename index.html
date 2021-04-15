@@ -23,32 +23,39 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="">Home</a>
+          <a href="#landing-tab">Home</a>
         </li>
         <li>
-          <a href="">Project</a>
+          <a href="#projects-tab">Project</a>
         </li>
         <li>
-          <a href="">Contacts</a>
+          <a href="#contacts-tab">Contacts</a>
         </li>
 
         <li class="nav-icon-container">
-          <a href="" class="nav-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="" class="nav-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/wingtong-000/" class="nav-icon"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/chevtong" class="nav-icon"
+            ><i class="fab fa-github"></i
+          ></a>
           <a href="" class="nav-icon"><i class="far fa-envelope"></i></a>
         </li>
       </ul>
     </nav>
 
-    <div class="landing-container">
+    <section class="landing-container">
+      <div id="landing-tab"></div>
       <div class="name-container">
         <h1>
           Hello, I am <br />
-          <span class="name">wing</span>.
+          <span class="name ">wing</span>.
         </h1>
       </div>
       <div class="title-container">
         <h1>Junior <br />Front-End<br />Developer</h1>
+        <a href="#profile-tab"><i class="fas fa-chevron-down"></i></a>
+        
       </div>
       <div class="circle-container">
         <div class="circle-bg1">
@@ -58,17 +65,20 @@
           <img src="./assets/green.png" alt="" />
         </div>
       </div>
-    </div>
-    <div class="profile-container">
+    </section>
+    <div id="profile-tab"></div>
+    <section class="profile-container">
+      
       <div class="statment-container">
+        
         <p>
           Have a keen interest in front-end languages, <br />and always have
           user experience design in mind.
-          <!-- <br />backed up with demonstrative Customer Service Experiences for
-          various industries. -->
+          <br />Backed up with demonstrative  <br />Customer Service Experiences for
+          various industries.
         </p>
       </div>
-
+      
       <div class="skill-container">
         <h3>Tech Stack</h3>
         <p>
@@ -82,10 +92,12 @@
           >Git<span class="pipe">&#x2759;</span>Figma
         </p>
       </div>
-    </div>
+      
+    </section>
 
-    <div class="projects-container">
-      <h2 class="projects-title">my projects</h2>
+    <section class="projects-container">
+      <div id="projects-tab"></div>
+      <h2 class="projects-title ">my projects</h2>
       <div class="project-grid">
         <div class="project-img-container">
           <img
@@ -94,7 +106,9 @@
             alt=""
           />
           <div class="overlay"></div>
-         <a href="#" class="project-button"> <i class="fab fa-github-square"></i> <br>Check out the codes </a>
+          <a href="#" class="project-button">
+            <i class="fab fa-github-square"></i> <br />Check out the codes
+          </a>
         </div>
         <div class="project-text">
           <h4>Title</h4>
@@ -133,7 +147,9 @@
             alt=""
           />
           <div class="overlay"></div>
-         <a href="#" class="project-button"> <i class="fab fa-github-square"></i> <br>Check out the codes </a>
+          <a href="#" class="project-button">
+            <i class="fab fa-github-square"></i> <br />Check out the codes
+          </a>
         </div>
 
         <div class="project-img-container">
@@ -143,7 +159,9 @@
             alt=""
           />
           <div class="overlay"></div>
-         <a href="#" class="project-button"> <i class="fab fa-github-square"></i> <br>Check out the codes </a>
+          <a href="#" class="project-button">
+            <i class="fab fa-github-square"></i> <br />Check out the codes
+          </a>
         </div>
         <div class="project-text">
           <h4>Title</h4>
@@ -161,9 +179,50 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    
+    <div id="contacts-tab"></div>
+    <section class="contacts-container">
+      <div class="contact-title">
+        <h2>Contact Info</h2>
+      </div>
+
+      <div class="contact-info">
+        <p><i class="fas fa-phone-alt"></i> +32 456 237 672</p>
+        <p><i class="far fa-envelope-open"></i> chevtongwingyan@gmail.com</p>
+        <a href="https://www.linkedin.com/in/wingtong-000/"
+          ><i class="fab fa-linkedin-in"></i>
+          www.linkedin.com/in/wingtong-000</a
+        >
+      </div>
+    </section>
+
+    <section class="contact-from-container">
+      <!-- TODO:activate the animation when the scroll is here -->
+      <div class="form-circle1-container">
+        <img class="form-circle1" src="./assets/halfhalf.png" alt="" />
+      </div>
+      <div class="form-circle2-container">
+        <img class="form-circle2" src="./assets/yellow.png" alt="" />
+      </div>
+      <form action="" method="post">
+        <h3 class="form-title">Contact me</h3>
+        <label for="">Name</label>
+        <input type="text" />
+        <label for="">Email</label>
+        <input type="email" />
+        <label for="">Phone </label>
+        <input type="number" />
+        <label for="">Message </label>
+        <textarea name="" id="" cols="30" rows="8"></textarea>
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <a href="#landing-tab">Back to the top</a>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
