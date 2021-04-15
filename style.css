@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap");
+
+:root {
+    --green: #35927d;
+    --light-green: #e0eae2;
+    --pink: #f58466;
+    --light-pink: #faccbc;
+    --yellow: #df9226;
+    --light-yellow:#fac583;
+    --blue: #05607f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+  color: var(--blue);
+}
+a {
+  text-decoration: none;
+}
+
+/* nav css start */
+nav {
+ 
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  /* background-color: beige; */
+}
+.nav-links {
+  list-style-type: none;
+  width: 80%;
+
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-links li a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.nav-icon{
+  margin: 0 .5rem;
+}
+
+/* landing section css start */
+.landing-container {
+ 
+  overflow-x: hidden;
+  height: 100vh;
+  position: relative;
+}
+.name-container{
+  padding-top: 13%;
+  padding-left: 15%;
+}
+.name{
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-size: 144px;
+  text-shadow: 10px 8px var(--blue);
+  padding: .5rem;
+}
+.title-container{
+  opacity: .25;
+  padding-left: 15%;
+}
+.title-container h1{
+  color: #F4A817;
+  font-size: 96px;
+  line-height: 80%;
+}
+.circle-bg1{
+  width: 35%;
+  position: absolute;
+  right: -5%;
+  top: -5%;
+  z-index: -1;
+}
+.circle-bg2{
+  width: 20%;
+  position: absolute;
+  right: -3%;
+  bottom: 10%;
+  z-index: -2;
+}
+.circle-bg1 img, .circle-bg2 img{
+  width: 100%;
+}
+/* project section css start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+}
