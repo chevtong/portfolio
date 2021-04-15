@@ -39,7 +39,7 @@
           <a href="https://github.com/chevtong" class="nav-icon"
             ><i class="fab fa-github"></i
           ></a>
-          <a href="" class="nav-icon"><i class="far fa-envelope"></i></a>
+          <a class="nav-icon" onclick="CopyToClipboard('sample')"><i class="far fa-envelope"></i></a>
         </li>
       </ul>
     </nav>
@@ -183,16 +183,19 @@
 
       <div class="contact-info">
         <p><i class="fas fa-phone-alt"></i> +32 456 237 672</p>
-        <p><i class="far fa-envelope-open"></i> chevtongwingyan@gmail.com</p>
+
+        <!-- TODO: style the button + add tooltip for user -->
+        <p id="sample"><i class="far fa-envelope-open"></i> chevtongwingyan@gmail.com</p><button onclick="CopyToClipboard('sample')"><i class="far fa-copy"></i></button>
         <a href="https://www.linkedin.com/in/wingtong-000/"
           ><i class="fab fa-linkedin-in"></i>
           www.linkedin.com/in/wingtong-000</a
         >
+        
       </div>
     </section>
 
     <section class="contact-from-container">
-      <!-- TODO:activate the animation when the scroll is here -->
+  
       <div class="form-circle1-container">
         <img class="form-circle1" src="./assets/halfhalf.png" alt="" />
       </div>
