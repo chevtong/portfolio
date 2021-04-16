@@ -2,21 +2,16 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 const navLinksTag = document.querySelectorAll(".nav-links li a");
-const emailBtn = document.querySelector(".email-btn")
+const emailBtn = document.querySelector(".email-btn");
 
-
-
-function CopyToClipboard(id)
-{
-var r = document.createRange();
-r.selectNode(document.getElementById(id));
-window.getSelection().removeAllRanges();
-window.getSelection().addRange(r);
-document.execCommand('copy');
-window.getSelection().removeAllRanges();
+function CopyToClipboard(id) {
+  var r = document.createRange();
+  r.selectNode(document.getElementById(id));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
 }
-
-
 
 function toggleNav(elem) {
   navLinksTag.forEach((tag) => {
@@ -63,8 +58,9 @@ function addAnimation() {
   } else {
     contactAnimation.classList.remove("animation");
   }
-
 }
+
+
 
 navLinksTag.forEach((tag) => {
   tag.addEventListener("click", () => {
@@ -76,10 +72,4 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-window.addEventListener(
-  "scroll",
-  () => {
-    addAnimation();
-  },
-  3000
-);
+window.addEventListener("scroll", addAnimation);

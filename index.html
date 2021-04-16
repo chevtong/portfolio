@@ -31,6 +31,12 @@
         <li>
           <a href="#contacts-tab" class="contacts-tab">Contacts</a>
         </li>
+        <li>
+          <a class="tooltip" href="./assets//TONG,Wing Yan-CV.pdf" download >Download CV
+         
+           <span class="tooltiptext-cv">download my cv</span>
+          </a>
+        </li>
 
         <li class="nav-icon-container">
           <a href="https://www.linkedin.com/in/wingtong-000/" class="nav-icon"
@@ -39,7 +45,7 @@
           <a href="https://github.com/chevtong" class="nav-icon"
             ><i class="fab fa-github"></i
           ></a>
-          <a class="nav-icon" onclick="CopyToClipboard('sample')"><i class="far fa-envelope"></i></a>
+          <a class="nav-icon" href="#contacts-tab"><i class="far fa-envelope"></i></a>
         </li>
       </ul>
     </nav>
@@ -184,8 +190,15 @@
       <div class="contact-info">
         <p><i class="fas fa-phone-alt"></i> +32 456 237 672</p>
 
-        <!-- TODO: style the button + add tooltip for user -->
-        <p id="sample"><i class="far fa-envelope-open"></i> chevtongwingyan@gmail.com</p><button onclick="CopyToClipboard('sample')"><i class="far fa-copy"></i></button>
+        <div class="contact-email-container">
+        <p id="email">
+          <i class="far fa-envelope-open"></i> 
+          chevtongwingyan@gmail.com
+        </p>
+        <button class="copy-email-btn tooltip" onclick="CopyToClipboard('email')">
+          <i class="fas fa-copy"></i><span class="tooltiptext">copy email</span>
+        </button>
+      </div>
         <a href="https://www.linkedin.com/in/wingtong-000/"
           ><i class="fab fa-linkedin-in"></i>
           www.linkedin.com/in/wingtong-000</a
