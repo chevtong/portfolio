@@ -214,19 +214,19 @@ nav {
 
 .project-grid {
   width: 60%;
-
   margin: auto;
   display: grid;
   grid-template-columns: 45% 45%;
-
   justify-items: center;
   align-items: center;
   grid-gap: 10rem;
   padding: 5rem;
+  padding-bottom: 8rem;
 }
 .project-img-container {
   height: 30vh;
   position: relative;
+  
 }
 .project-img {
   width: 100%;
