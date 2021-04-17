@@ -25,11 +25,14 @@ h4,
 h5 {
   color: var(--blue);
 }
+p {
+  color: #91b1aa;
+}
 a {
   text-decoration: none;
 }
-button:focus{
-  outline:none;
+button:focus {
+  outline: none;
 }
 
 /* nav css start */
@@ -50,24 +53,22 @@ nav {
   margin-left: auto;
 }
 .nav-links li a {
-  color: var(--blue);
+  color: var(--green);
   font-weight: 500;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
-
   padding: 0.5rem;
 }
 .nav-links li a:hover {
-  color: var(--yellow);
+  color: var(--pink);
 }
 .nav-active {
-  border-bottom: 5px solid var(--yellow);
-  /* padding: .5rem; */
+  border-bottom: 5px solid var(--pink);
 }
-
 .nav-icon {
   margin: 0 0.5rem;
 }
+
 /* download CV tooltip css */
 .tooltip .tooltiptext-cv {
   visibility: hidden;
@@ -81,8 +82,7 @@ nav {
   z-index: 1;
   bottom: -100%;
   font-size: 12px;
-   left: 40%; 
-  /* margin-left: -100px;  */
+  left: 40%;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -103,7 +103,6 @@ nav {
   opacity: 1;
 }
 
-
 /* landing section css start */
 .landing-container {
   overflow-x: hidden;
@@ -112,126 +111,151 @@ nav {
 }
 .name-container {
   padding-top: 13%;
-  padding-left: 15%;
+  padding-left: 18%;
 }
 .name {
   color: var(--yellow);
   text-transform: uppercase;
-  font-size: 144px;
+  font-size: 216px;
   text-shadow: -13px 13px var(--blue);
   padding: 0.5rem;
 }
 
 .title-container {
   opacity: 0.25;
-  padding-left: 13%;
+  padding-left: 15%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
 .title-container h1 {
   color: #f4a817;
-  font-size: 96px;
+  font-size: 72px;
   line-height: 80%;
   animation: appear 1s 1 ease-in-out;
 }
-
 .circle-bg1 {
-  width: 35%;
+  width: 25%;
   position: absolute;
-  right: -5%;
-  top: -5%;
+  right: -2%;
+  top: -1%;
   z-index: -1;
 }
-
 .circle-bg2 {
-  width: 20%;
+  width: 10%;
   position: absolute;
-  right: -3%;
-  bottom: 10%;
+  right: -2%;
+  top: 43%;
   z-index: -2;
 }
 .circle-bg1 img,
-.circle-bg2 img {
+.circle-bg2 img,
+.profile-circle1 img,
+.profile-circle2 img {
   width: 100%;
 }
 .circle-bg1 img {
   transform: rotate(20deg);
+  opacity: 0.7;
 }
 
 /* profile section css start */
-.profile-container,
-.contacts-container {
+.profile-container {
   height: 50vh;
-
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
   align-items: center;
+  grid-template-rows: 20% 80%;
+  margin: 5% auto;
+  width: 70%;
 }
-.statment-container,
-.skill-container,
+.profile-title {
+  grid-column: 1/3;
+  padding: 2rem 0;
+  align-self: center;
+}
+.line-break {
+  border-top: 3px solid var(--blue);
+  padding-bottom: 3rem;
+  width: 70vw;
+}
 .contact-title,
 .contact-info {
   margin: 0 3rem;
 }
-.statment-container p {
-  color: var(--blue);
-
-  font-size: 1.3rem;
-}
-
 .skill-container h3 {
   color: var(--pink);
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--light-yellow);
+  border-bottom: 2px solid var(--light-pink);
+  margin: 0 4rem;
   margin-bottom: 0.5rem;
 }
 .skill-container p {
-  color: var(--blue);
   text-align: center;
   padding: 0.3rem 0;
   font-weight: 500;
   font-size: 1.5rem;
 }
 .pipe {
-  margin: 0 0.8rem;
+  margin: 0 1.5rem;
 }
 
 /* Project section css start */
 .projects-container {
-  background-color: var(--light-green);
+  background-color: #f1faf3;
+  padding: 5rem;
+  padding-bottom: 8rem;
 }
-.projects-title {
+.projects-title,
+.profile-title h3,
+.contact-title h2 {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 4rem;
-  color: var(--green);
+  padding: 4rem 0;
+  color: var(--yellow);
   font-size: 48px;
-  text-shadow: 3px 3px var(--light-yellow);
+  text-shadow: -3px 3px var(--blue);
 }
-
 .project-grid {
   width: 60%;
   margin: auto;
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
-  grid-gap: 10rem;
-  padding: 5rem;
-  padding-bottom: 8rem;
+  grid-gap: 10rem 5rem;
 }
 .project-img-container {
   height: 30vh;
   position: relative;
-  
 }
 .project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.project-img-main,
+.project-img-main2,
+.project-img-main1 {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.thumbnail-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+.project-img-thumbnail,
+.project-img-thumbnail2,
+.project-img-thumbnail1 {
+  margin: 0.8rem;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
 }
 .overlay {
   position: absolute;
@@ -239,42 +263,64 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(255, 255, 255, 0); */
   transition: all 0.5s ease;
+  opacity: 0;
 }
-.project-img-container:hover .overlay {
-  display: block;
+.overlay-container:hover .overlay {
   background: white;
   opacity: 0.8;
 }
 .project-button {
   position: absolute;
-
   left: 50%;
-  top: 80%;
-  transform: translate(-50%, -80%);
-
+  top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.35s ease;
-  color: var(--blue);
+  color: var(--yellow);
   text-align: center;
+  padding: 0.5rem 1rem;
 }
-.project-img-container:hover .project-button {
+.overlay-container:hover .project-button {
   opacity: 1;
 }
-.project-text h4,
+.project-text h4 {
+  color: #91b1aa;
+  font-size: 36px;
+  margin: 1rem 0;
+}
 .project-text p {
-  color: var(--green);
+  padding: 0.5rem 0;
+}
+.project-links {
+  background-color: #91b1aa;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  transition: all 0.15s;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.project-links:hover {
+  background-color: var(--yellow);
 }
 
 /* contacts section css start */
-.contact-title {
-  font-size: 48px;
+.contacts-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
+.contact-title h2 {
+  font-size: 64px;
+}
 .contact-info {
-  color: var(--yellow);
-  height: 20vh;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -282,21 +328,19 @@ nav {
 .contact-info i {
   padding: 0 1rem;
 }
-
 .contact-info a {
-  color: var(--yellow);
+  color: #91b1aa;
 }
 .contact-info a:hover {
   color: var(--light-yellow);
 }
-.contact-email-container{
+.contact-email-container {
   display: flex;
-  
 }
-.copy-email-btn{
+.copy-email-btn {
   background-color: transparent;
   border: none;
-  color:var(--yellow);
+  color: var(--blue);
   cursor: pointer;
 }
 /* copy email tooltip css */
@@ -304,7 +348,6 @@ nav {
   position: relative;
   display: inline-block;
 }
-
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -321,7 +364,6 @@ nav {
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -332,70 +374,27 @@ nav {
   border-style: solid;
   border-color: var(--blue) transparent transparent transparent;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
-
-/* contact form section css start */
-.contact-from-container {
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 18px;
-  border: 5px solid var(--pink);
-  padding: 3rem 8rem;
-  z-index: 5;
-}
-.form-title {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--pink);
-  font-size: 48px;
-  text-shadow: 3px 3px var(--blue);
-  padding-bottom: 1rem;
-}
-label {
-  color: var(--blue);
-}
-input,
-textarea {
-  margin-bottom: 0.5rem;
-  border: none;
-  background-color: var(--light-pink);
-  padding: 0.5rem;
-}
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-.form-circle1-container {
+.profile-circle1 {
+  width: 10%;
   position: absolute;
   bottom: 5%;
-  left: 4%;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
-.form-circle2-container {
+.profile-circle2 {
+  width: 5%;
   position: absolute;
-  bottom: 1%;
-  left: 1%;
-}
-.form-circle1,
-.form-circle2 {
-  width: 100%;
-}
-.form-circle1 {
-  animation: rotate-center 8s linear infinite both;
+  left: 6%;
+  bottom: 3%;
+  z-index: -2;
 }
 
+/* footer css start */
 footer {
   height: 5vh;
   background-color: var(--blue);
@@ -465,6 +464,8 @@ footer a:hover {
   }
 }
 
+
+/* media queries start here */
 @media screen and (max-width: 768px) {
   .line {
     width: 30px;

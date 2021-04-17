@@ -32,9 +32,10 @@
           <a href="#contacts-tab" class="contacts-tab">Contacts</a>
         </li>
         <li>
-          <a class="tooltip" href="./assets//TONG,Wing Yan-CV.pdf" download >Download CV
-         
-           <span class="tooltiptext-cv">download my cv</span>
+          <a class="tooltip" href="./assets//TONG,Wing Yan-CV.pdf" download
+            >Download CV
+
+            <span class="tooltiptext-cv">Download my CV</span>
           </a>
         </li>
 
@@ -45,7 +46,9 @@
           <a href="https://github.com/chevtong" class="nav-icon"
             ><i class="fab fa-github"></i
           ></a>
-          <a class="nav-icon" href="#contacts-tab"><i class="far fa-envelope"></i></a>
+          <a class="nav-icon" href="#contacts-tab"
+            ><i class="far fa-envelope"></i
+          ></a>
         </li>
       </ul>
     </nav>
@@ -72,11 +75,15 @@
     </section>
     <div id="profile-tab"></div>
     <section class="profile-container">
+      <div class="profile-title">
+        <div class="line-break"></div>
+        <h3>about me</h3>
+      </div>
       <div class="statment-container">
         <p>
           Have a keen interest in front-end languages, <br />and always have
           user experience design in mind. <br />Backed up with demonstrative
-          <br />Customer Service Experiences for various industries.
+          Customer Service Experiences for various industries.
         </p>
       </div>
 
@@ -95,89 +102,179 @@
       </div>
     </section>
 
+    <!-- Project section starter here -->
+    <div id="projects-tab"></div>
     <section class="projects-container">
-      <div id="projects-tab"></div>
-      <h2 class="projects-title">my projects</h2>
+      <h3 class="projects-title">my projects</h3>
       <div class="project-grid">
+        <!-- eshop app start here -->
         <div class="project-img-container">
-          <img
-            class="project-img"
-            src="./assets//weather_app_demo.gif"
-            alt=""
-          />
-          <div class="overlay"></div>
-          <a href="https://chevtong.github.io/react-weather-compare/" class="project-button">
-            <i class="fab fa-github-square"></i> <br />Check out the codes
-          </a>
+          <div class="overlay-container">
+            <img
+              class="project-img-main1"
+              src="./assets/culturd-list.png"
+              alt=""
+            />
+
+            <div class="overlay"></div>
+
+            <a href="https://github.com/aimalm/culturd" class="project-button">
+              <i class="fab fa-github-square"></i> <br />Check out the codes
+            </a>
+          </div>
+
+          <div class="thumbnail-container">
+            <img
+              class="project-img-thumbnail1"
+              src="./assets/culturd-cart.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail1"
+              src="./assets/culturd-list.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail1"
+              src="./assets/culturd-nexin.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail1"
+              src="./assets/culturd-index.png"
+              alt=""
+            />
+          </div>
         </div>
         <div class="project-text">
-          <h4>Weather App in React</h4>
+          <h4>E-commerce for Home Cooking Dishes</h4>
+          <p>Programming Language: <strong>React</strong></p>
+          <p>A platform to sell and buy home-cook food.</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
+            Users can browse, search and filter posts, shopping cart is built
+            and accepting payment through Paypal. Profile editing is also
+            provided and the seller can add and delete posts.
           </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
-          </p>
-          <a href="https://chevtong.github.io/react-weather-compare/">Live Demo</a>
-          <a href="https://github.com/chevtong/react-weather-compare">View Source Code</a>
-        </div>
-        <div class="project-text">
-          <h4>E-commerce Frontend with React</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
-          </p>
-          <a href="https://culturd.netlify.app/">Live Demo</a>
-          <a href="https://github.com/aimalm/culturd">View Source Code</a>
-        </div>
-        <div class="project-img-container">
-          <img
-            class="project-img"
-            src="./assets//culturd-demo.gif"
-            alt=""
-          />
-          <div class="overlay"></div>
-          <a href="https://github.com/aimalm/culturd" class="project-button">
-            <i class="fab fa-github-square"></i> <br />Check out the codes
-          </a>
+          <a class="project-links" href="https://culturd.netlify.app/food"
+            >Live Demo</a
+          >
+          <a class="project-links" href="https://github.com/aimalm/culturd"
+            >View Source Code</a
+          >
         </div>
 
+        <!-- weather app start here -->
+        <div class="project-text">
+          <h4>Weather Compare App</h4>
+          <p>Programming Language: <strong>React</strong></p>
+          <p>Want to see the weather of cities around the world?</p>
+          <p>
+            Showing the weather and their forecasts for 4 cities. Night mode is
+            available for the app.
+          </p>
+          <a
+            class="project-links"
+            href="https://chevtong.github.io/react-weather-compare/"
+            >Live Demo</a
+          >
+          <a
+            class="project-links"
+            href="https://github.com/chevtong/react-weather-compare"
+            >View Source Code</a
+          >
+        </div>
         <div class="project-img-container">
-          <img
-            class="project-img"
-            src="./assets//bingo-demo.gif"
-            alt=""
-          />
-          <div class="overlay"></div>
-          <a href="https://github.com/Vicible2/ho-ho-holiday" class="project-button">
-            <i class="fab fa-github-square"></i> <br />Check out the codes
-          </a>
+          <div class="overlay-container">
+            <img
+              class="project-img-main"
+              src="./assets/weather-app.png"
+              alt=""
+            />
+
+            <div class="overlay"></div>
+
+            <a
+              href="https://github.com/chevtong/react-weather-compare"
+              class="project-button"
+            >
+              <i class="fab fa-github-square"></i> <br />Check out the codes
+            </a>
+          </div>
+
+          <div class="thumbnail-container">
+            <img
+              class="project-img-thumbnail"
+              src="./assets/weather-app-detail.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail"
+              src="./assets/weather-app-dark.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail"
+              src="./assets/weather-app.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- bingo start here -->
+        <div class="project-img-container">
+          <div class="overlay-container">
+            <img class="project-img-main2" src="./assets/bingo.png" alt="" />
+
+            <div class="overlay"></div>
+
+            <a
+              href="https://github.com/Vicible2/ho-ho-holiday"
+              class="project-button"
+            >
+              <i class="fab fa-github-square"></i> <br />Check out the codes
+            </a>
+          </div>
+
+          <div class="thumbnail-container">
+            <img
+              class="project-img-thumbnail2"
+              src="./assets/bingo-index.png"
+              alt=""
+            />
+            <img
+              class="project-img-thumbnail2"
+              src="./assets/bingo.png"
+              alt=""
+            />
+          </div>
         </div>
         <div class="project-text">
-          <h4>Bingo by Vanilla Javascript</h4>
+          <h4>Christmas Bingo</h4>
+          <p>Programming Language: <strong>Vanilla JavaScript</strong></p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
+            With COVID, we cannot spend the Christmas with our friends and
+            families, but we can still invite them to enjoy this Christmas
+            themed app!
           </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ea
-            odit cupiditate vero nisi officia?
-          </p>
-          <a href="https://vicible2.github.io/ho-ho-holiday/">Live Demo</a>
-          <a href="https://github.com/Vicible2/ho-ho-holiday">View Source Code</a>
-     
+          <p>Simplified Bingo - win with 4 cards in a row in 20 draws.</p>
+          <a
+            class="project-links"
+            href="https://vicible2.github.io/ho-ho-holiday/bingo/bingo.html"
+            >Live Demo</a
+          >
+          <a
+            class="project-links"
+            href="https://github.com/Vicible2/ho-ho-holiday"
+            >View Source Code</a
+          >
         </div>
       </div>
     </section>
 
+     <!-- contact section starter here -->
     <div id="contacts-tab"></div>
     <section class="contacts-container">
+      
       <div class="contact-title">
         <h2>Contact Info</h2>
       </div>
@@ -186,43 +283,33 @@
         <p><i class="fas fa-phone-alt"></i> +32 456 237 672</p>
 
         <div class="contact-email-container">
-        <p id="email">
-          <i class="far fa-envelope-open"></i> 
-          chevtongwingyan@gmail.com
-        </p>
-        <button class="copy-email-btn tooltip" onclick="CopyToClipboard('email')">
-          <i class="fas fa-copy"></i><span class="tooltiptext">copy email</span>
-        </button>
-      </div>
+          <p id="email">
+            <i class="far fa-envelope-open"></i>
+            chevtongwingyan@gmail.com
+          </p>
+          <button
+            class="copy-email-btn tooltip"
+            onclick="CopyToClipboard('email')"
+          >
+            <i class="fas fa-copy"></i
+            ><span class="tooltiptext">copy email</span>
+          </button>
+        </div>
         <a href="https://www.linkedin.com/in/wingtong-000/"
           ><i class="fab fa-linkedin-in"></i>
           www.linkedin.com/in/wingtong-000</a
         >
-        
       </div>
+      <div class="profile-circle-container">
+      <div class="profile-circle1">
+        <img src="./assets/green-checked.png" alt="" />
+      </div>
+      <div class="profile-circle2">
+        <img src="./assets/yellow.png" alt="" />
+      </div>
+    </div>
     </section>
-
-    <section class="contact-from-container">
-  
-      <div class="form-circle1-container">
-        <img class="form-circle1" src="./assets/halfhalf.png" alt="" />
-      </div>
-      <div class="form-circle2-container">
-        <img class="form-circle2" src="./assets/yellow.png" alt="" />
-      </div>
-      <form action="" method="post">
-        <h3 class="form-title">Contact me</h3>
-        <label for="">Name</label>
-        <input type="text" />
-        <label for="">Email</label>
-        <input type="email" />
-        <label for="">Phone </label>
-        <input type="number" />
-        <label for="">Message </label>
-        <textarea name="" id="" cols="30" rows="8"></textarea>
-        <button type="submit" class="form-button">Submit</button>
-      </form>
-    </section>
+    
 
     <footer>
       <a href="#landing-tab">Back to the top</a>
