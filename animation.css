@@ -1,0 +1,55 @@
+/* class for animation and keyframes */
+.name-animation {
+    animation: text-shadow-pop-bl 1s both;
+  }
+  .animation {
+    animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes appear {
+    0% {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes text-shadow-pop-bl {
+    0% {
+      text-shadow: 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),
+        0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),
+        0 0 var(--blue);
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px 1px var(--blue), -2px 2px var(--blue),
+        -3px 3px var(--blue), -4px 4px var(--blue), -5px 5px var(--blue),
+        -6px 6px var(--blue), -7px 7px var(--blue), -8px 8px var(--blue),
+        -9px 9px var(--blue), -10px 10px var(--blue), -11px 11px var(--blue),
+        -12px 12px var(--blue), -13px 13px var(--blue);
+      transform: translateX(8px) translateY(-8px);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

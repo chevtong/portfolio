@@ -17,20 +17,16 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
+
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--blue);
-}
+
 p {
   color: #91b1aa;
   line-height: 1.5;
 }
 a {
   text-decoration: none;
+ 
 }
 button:focus {
   outline: none;
@@ -70,39 +66,6 @@ nav {
   margin: 0 0.5rem;
 }
 
-/* download CV tooltip css */
-.tooltip .tooltiptext-cv {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--blue);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: -100%;
-  font-size: 12px;
-  left: 40%;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext-cv::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--blue) transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext-cv {
-  visibility: visible;
-  opacity: 1;
-}
 
 /* landing section css start */
 .landing-container {
@@ -211,12 +174,12 @@ nav {
 }
 .projects-title,
 .profile-title h3,
-.contact-title h2 {
+.contact-title h2, .cv-title h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 4rem 0;
   color: var(--yellow);
-  font-size: 48px;
+  font-size: 64px;
   text-shadow: -3px 3px var(--blue);
 }
 .project-grid {
@@ -268,7 +231,7 @@ nav {
 }
 .overlay-container:hover .overlay {
   background: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .project-button {
   position: absolute;
@@ -313,13 +276,12 @@ nav {
   height: 50vh;
   display: flex;
   overflow-x: hidden;
+  overflow-y: hidden;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
 }
-.contact-title h2 {
-  font-size: 64px;
-}
+
 .contact-info {
   height: 15vh;
   display: flex;
@@ -404,282 +366,53 @@ footer a:hover {
   color: var(--light-yellow);
 }
 
-/* class for animation and keyframes */
-.name-animation {
-  animation: text-shadow-pop-bl 1s both;
+
+/* cv page css  */
+.cv-container{
+  background-color: #FCE9C5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
 }
-.animation {
-  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
-@keyframes text-shadow-pop-bl {
-  0% {
-    text-shadow: 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),
-      0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue), 0 0 var(--blue),
-      0 0 var(--blue);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    text-shadow: -1px 1px var(--blue), -2px 2px var(--blue),
-      -3px 3px var(--blue), -4px 4px var(--blue), -5px 5px var(--blue),
-      -6px 6px var(--blue), -7px 7px var(--blue), -8px 8px var(--blue),
-      -9px 9px var(--blue), -10px 10px var(--blue), -11px 11px var(--blue),
-      -12px 12px var(--blue), -13px 13px var(--blue);
-    transform: translateX(8px) translateY(-8px);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.cv-title{
+  padding: 2rem 0;
 }
 
-/* media queries start here */
-@media screen and (min-width: 2560px) {
-  .name {
-    font-size: 27rem;
-  }
-  .title-container h1 {
-    font-size: 9rem;
-  }
-  .statment-container p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 1367px) {
-  .name {
-    font-size: 13.5rem;
-  }
-  .title-container h1 {
-    font-size: 4.5rem;
-  }
-  .project-links {
-    margin: 0.5rem 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .name {
-    font-size: 9rem;
-  }
-  .skill-container p {
-    font-size: 1rem;
-  }
-  .pipe {
-    margin: 0 1rem;
-  }
-  .project-grid {
-    width: 80%;
-  }
-  .project-img-container {
-    width: 100%;
-  }
-  .project-text h4 {
-    font-size: 24px;
-  }
-  .thumbnail-container {
-    flex-wrap: wrap;
-  }
-  .overlay {
-    height: 60%;
-  }
-  .contact-title,
-  .contact-info {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: var(--green);
-    margin: 5px;
-  }
-  nav {
-    position: relative;
-    height: auto;
-  }
-  .hamburger {
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    top: 5%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0.5rem;
-    border-radius: 12px;
-  }
-  .nav-links {
-    position: fixed;
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -30%);
-    -webkit-clip-path: circle(100px at 90% -30%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-  }
-  .nav-links.open {
-    clip-path: circle(1500px at 90% -10%);
-    -webkit-clip-path: circle(1500px at 90% -10%);
-    pointer-events: all;
-  }
-  .landing-container {
-    height: 70vh;
-  }
-  .profile-container {
-    height: auto;
-    width: 80%;
-  }
-  .profile-title h3 {
-    padding: 2rem 0;
-  }
-  .contacts-container {
-    width: 80%;
-    margin: auto;
-  }
-  .projects-title {
-    padding: 2rem 0;
-  }
-  .project-grid {
-    width: 90%;
-    grid-gap: 5rem 2rem;
-  }
-  .thumbnail-container {
-    height: 10%;
-  }
-  .contacts-container {
-    height: 40vh;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .contact-title h2 {
-    font-size: 36px;
-  }
-  .contact-info {
-    height: 10vh;
-  }
-  .profile-circle1 {
-    width: 20%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .landing-container {
-    height: 90vh;
-  }
-  .name-container {
-    padding: 0;
-    margin: 0 auto;
-  }
-  .name {
-    font-size: 6rem;
-    text-shadow: -8px 8px var(--blue);
-  }
-  .title-container h1 {
-    font-size: 3rem;
-  }
-  .circle-bg1 {
-    width: 50%;
-    right: 0%;
-    top: 1%;
-  }
-  .profile-container {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    width: 90%;
-  }
-  .profile-title {
-    grid-column: 1/2;
-  }
-  .line-break {
-    padding: 0;
-  }
-  .projects-title,
-  .profile-title h3 {
-    font-size: 36px;
-    text-shadow: -2px 2px var(--blue);
-  }
-  .statment-container p {
-    font-size: 1rem;
-  }
-  .skill-container {
-    padding: 2rem 0;
-  }
-  .skill-container h3 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  .skill-container p {
-    font-size: 1rem;
-  }
-  .pipe {
-    margin: 0 0.5rem;
-  }
+.cv-img-container {
+  position: relative;
+  width: 40%;
+  border-radius: 13px;
+  box-shadow: rgba(223,146,38, 0.4) -5px 5px, rgba(223,146,38, 0.3) -10px 10px, rgba(223,146,38, 0.2) -15px 15px, rgba(223,146,38, 0.1) -20px 20px, rgba(223,146,38, 0.05) -25px 25px;}
 
-  .projects-container {
-    padding: 2rem 0;
-  }
-  .project-grid {
-    width: 85%;
-    grid-template-columns: 100%;
-    grid-gap: 1rem;
-  }
-  .weather-app-img {
-    grid-row: 3/4;
-  }
-  .project-links {
-    font-size: 0.8rem;
-  }
-  .contacts-container {
-    height: auto;
-    flex-direction: column;
-    overflow-y: hidden;
-  }
-  .contact-title h2 {
-    font-size: 36px;
-    text-shadow: -1.5px 1.5px var(--blue);
-    padding: 2rem 0;
-  }
-  .contact-info {
-    font-size: 0.7rem;
-    padding-bottom: 2rem;
-  }
-  .contact-info i {
-    padding: 0.2rem;
-    font-size: 0.5rem;
-  }
-  .profile-circle1 {
-    width: 30%;
-    left: 0;
-    opacity: 0.3;
-    top: -20%;
-  }
-  footer a {
-    font-size: 0.5rem;
-  }
+.cv-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+
+}
+
+.cv-overlay {
+  position: absolute; 
+  bottom: 0; 
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.9); 
+  color: var(--green);
+ 
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cv-img-container:hover .cv-overlay {
+  opacity: 1;
 }

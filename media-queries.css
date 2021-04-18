@@ -1,0 +1,250 @@
+/* media queries start here */
+@media screen and (min-width: 2560px) {
+  p {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 27rem;
+  }
+  .title-container h1 {
+    font-size: 9rem;
+  }
+
+  .projects-title,
+  .profile-title h3,
+  .contact-title h2 {
+    font-size: 96px;
+  }
+  .skill-container h3 {
+    font-size: 3rem;
+  }
+
+  .project-links {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+  }
+  .nav-links li a,
+  .skill-container p,
+  .copy-email-btn,
+  .contact-info a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .name {
+    font-size: 13.5rem;
+  }
+  .title-container h1 {
+    font-size: 4.5rem;
+  }
+  .project-links {
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .name {
+    font-size: 9rem;
+  }
+  .skill-container p {
+    font-size: 1rem;
+  }
+  .pipe {
+    margin: 0 1rem;
+  }
+  .project-grid {
+    width: 80%;
+  }
+  .project-img-container {
+    width: 100%;
+  }
+  .project-text h4 {
+    font-size: 24px;
+  }
+  .thumbnail-container {
+    flex-wrap: wrap;
+  }
+  .overlay {
+    height: 60%;
+  }
+  .contact-title,
+  .contact-info {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--green);
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+    height: auto;
+  }
+  .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+  .landing-container {
+    height: 70vh;
+  }
+  .profile-container {
+    height: auto;
+    width: 80%;
+  }
+  .profile-title h3 {
+    padding: 2rem 0;
+  }
+  .contacts-container {
+    width: 80%;
+    margin: auto;
+  }
+  .projects-title {
+    padding: 2rem 0;
+  }
+  .project-grid {
+    width: 90%;
+    grid-gap: 5rem 2rem;
+  }
+  .thumbnail-container {
+    height: 10%;
+  }
+  .contacts-container {
+    height: 40vh;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .contact-title h2 {
+    font-size: 36px;
+  }
+  .contact-info {
+    height: 10vh;
+  }
+  .profile-circle1 {
+    width: 20%;
+  }
+  .cv-title {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .landing-container {
+    height: 90vh;
+  }
+  .name-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .name {
+    font-size: 6rem;
+    text-shadow: -8px 8px var(--blue);
+  }
+  .title-container h1 {
+    font-size: 3rem;
+  }
+  .circle-bg1 {
+    width: 50%;
+    right: 0%;
+    top: 1%;
+  }
+  .profile-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    width: 90%;
+  }
+  .profile-title {
+    grid-column: 1/2;
+  }
+  .line-break {
+    padding: 0;
+  }
+  .projects-title,
+  .profile-title h3 {
+    font-size: 36px;
+    text-shadow: -2px 2px var(--blue);
+  }
+  .statment-container p {
+    font-size: 1rem;
+  }
+  .skill-container {
+    padding: 2rem 0;
+  }
+  .skill-container h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .skill-container p {
+    font-size: 1rem;
+  }
+  .pipe {
+    margin: 0 0.5rem;
+  }
+
+  .projects-container {
+    padding: 2rem 0;
+  }
+  .project-grid {
+    width: 80%;
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  .weather-app-img {
+    grid-row: 3/4;
+  }
+  .project-links {
+    font-size: 0.8rem;
+  }
+  .contacts-container {
+    height: auto;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+  .contact-title h2 {
+    font-size: 36px;
+    text-shadow: -1.5px 1.5px var(--blue);
+    padding: 2rem 0;
+  }
+  .contact-info {
+    font-size: 0.7rem;
+    padding-bottom: 2rem;
+  }
+  .contact-info i {
+    padding: 0.2rem;
+    font-size: 0.5rem;
+  }
+  .profile-circle1 {
+    width: 30%;
+    left: 0;
+    opacity: 0.3;
+    top: -20%;
+  }
+  footer a {
+    font-size: 0.5rem;
+  }
+}

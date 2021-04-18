@@ -3,38 +3,28 @@ const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 const navLinksTag = document.querySelectorAll(".nav-links li a");
 const emailBtn = document.querySelector(".email-btn");
-const mainImg = document.querySelector(".project-img-main")
-const thumbnailsImg = document.querySelectorAll(".project-img-thumbnail")
-const mainImg2 = document.querySelector(".project-img-main2")
-const thumbnailsImg2 = document.querySelectorAll(".project-img-thumbnail2")
-const mainImg1 = document.querySelector(".project-img-main1")
-const thumbnailsImg1 = document.querySelectorAll(".project-img-thumbnail1")
+const mainImg = document.querySelector(".project-img-main");
+const thumbnailsImg = document.querySelectorAll(".project-img-thumbnail");
+const mainImg2 = document.querySelector(".project-img-main2");
+const thumbnailsImg2 = document.querySelectorAll(".project-img-thumbnail2");
+const mainImg1 = document.querySelector(".project-img-main1");
+const thumbnailsImg1 = document.querySelectorAll(".project-img-thumbnail1");
 
-
-
-
-thumbnailsImg.forEach(thumbnail=>{
-
-  thumbnail.addEventListener("click", ()=>{
-   
-     mainImg.src=thumbnail.src
-  })
-})
-thumbnailsImg1.forEach(thumbnail=>{
-
-  thumbnail.addEventListener("click", ()=>{
-   
-     mainImg1.src=thumbnail.src
-  })
-})
-thumbnailsImg2.forEach(thumbnail=>{
-  thumbnail.addEventListener("click", ()=>{
-    
-     mainImg2.src=thumbnail.src
-  })
-})
-
-
+thumbnailsImg.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    mainImg.src = thumbnail.src;
+  });
+});
+thumbnailsImg1.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    mainImg1.src = thumbnail.src;
+  });
+});
+thumbnailsImg2.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => {
+    mainImg2.src = thumbnail.src;
+  });
+});
 
 function CopyToClipboard(id) {
   var r = document.createRange();
@@ -45,17 +35,21 @@ function CopyToClipboard(id) {
   window.getSelection().removeAllRanges();
 }
 
-
-
 function addAnimation() {
   const contactAnimation = document.querySelector(".contacts-container");
   const projectAnimation = document.querySelector(".projects-title");
   const profileAnimation = document.querySelector(".profile-title");
   const nameAnimation = document.querySelector(".name");
+  const cvAnimation = document.querySelector(".cv-title");
 
   const landingTab = document.querySelector(".landing-tab");
   const projectTab = document.querySelector(".projects-tab");
   const contactsTab = document.querySelector(".contacts-tab");
+  const cvTab = document.querySelector(".cv-tab");
+
+  const cvPosition = document
+    .querySelector(".cv-container")
+    .getBoundingClientRect().top;
 
   const projectPostion = document
     .querySelector(".projects-container")
@@ -63,7 +57,7 @@ function addAnimation() {
   const namePosition = document
     .querySelector(".name-container")
     .getBoundingClientRect().top;
-  const titlePosition = contactAnimation.getBoundingClientRect().top;
+  const contactsPosition = contactAnimation.getBoundingClientRect().top;
   const profilePosition = profileAnimation.getBoundingClientRect().top;
 
   const screenPosition = window.innerHeight / 1.4;
@@ -86,19 +80,28 @@ function addAnimation() {
   } else {
     projectAnimation.classList.remove("animation");
   }
-  if (titlePosition < screenPosition) {
+  if (contactsPosition < screenPosition) {
     contactAnimation.classList.add("animation");
-    toggleNav(contactsTab);
   } else {
     contactAnimation.classList.remove("animation");
   }
-}
+  if (contactsPosition < 500 && contactsPosition > -200) {
+    toggleNav(contactsTab);
+  }
 
+  if (cvPosition < screenPosition) {
+    cvAnimation.classList.add("animation");
+    toggleNav(cvTab);
+  } else {
+    cvAnimation.classList.remove("animation");
+  }
+}
 
 function toggleNav(elem) {
   navLinksTag.forEach((tag) => {
     tag.classList.remove("nav-active");
   });
+
   elem.classList.add("nav-active");
 }
 
@@ -110,9 +113,11 @@ navLinksTag.forEach((tag) => {
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
-  links.forEach(link=>link.addEventListener('click', ()=>{
-    navLinks.classList.remove("open");
-  }))
+  links.forEach((link) =>
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+    })
+  );
 });
 
 window.addEventListener("scroll", addAnimation);

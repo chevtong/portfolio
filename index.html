@@ -12,7 +12,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="animation.css">
+
+    <title>Wing's Portfolio</title>
   </head>
   <body>
     <nav>
@@ -32,21 +35,17 @@
           <a href="#contacts-tab" class="contacts-tab">Contacts</a>
         </li>
         <li>
-          <a class="tooltip" href="./assets//TONG,Wing Yan-CV.pdf" download
-            >Download CV
-
-            <span class="tooltiptext-cv">Download my CV</span>
-          </a>
+          <a href="#cv-tab" class="cv-tab">Curriculum Vitae</a>
         </li>
 
         <li class="nav-icon-container">
-          <a href="https://www.linkedin.com/in/wingtong-000/" class="nav-icon"
+          <a href="https://www.linkedin.com/in/wingtong-000/" class="nav-icon" target="_blank"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-          <a href="https://github.com/chevtong" class="nav-icon"
+          <a href="https://github.com/chevtong" class="nav-icon" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
-          <a class="nav-icon" href="#contacts-tab"
+          <a class="nav-icon" href="#contacts-tab" target="_blank"
             ><i class="far fa-envelope"></i
           ></a>
         </li>
@@ -118,7 +117,7 @@
 
             <div class="overlay"></div>
 
-            <a href="https://github.com/aimalm/culturd" class="project-button">
+            <a href="https://github.com/aimalm/culturd" class="project-button" target="_blank">
               <i class="fab fa-github-square"></i> <br />Check out the codes
             </a>
           </div>
@@ -152,9 +151,11 @@
             provided and the seller can add and delete posts.
           </p>
           <a class="project-links" href="https://culturd.netlify.app/food"
+          target="_blank"
             >Live Demo</a
           >
           <a class="project-links" href="https://github.com/aimalm/culturd"
+          target="_blank"
             >View Source Code</a
           >
         </div>
@@ -171,11 +172,13 @@
           <a
             class="project-links"
             href="https://chevtong.github.io/react-weather-compare/"
+            target="_blank"
             >Live Demo</a
           >
           <a
             class="project-links"
             href="https://github.com/chevtong/react-weather-compare"
+            target="_blank"
             >View Source Code</a
           >
         </div>
@@ -191,6 +194,7 @@
 
             <a
               href="https://github.com/chevtong/react-weather-compare"
+              target="_blank"
               class="project-button"
             >
               <i class="fab fa-github-square"></i> <br />Check out the codes
@@ -225,6 +229,7 @@
 
             <a
               href="https://github.com/Vicible2/ho-ho-holiday"
+              target="_blank"
               class="project-button"
             >
               <i class="fab fa-github-square"></i> <br />Check out the codes
@@ -256,11 +261,13 @@
           <a
             class="project-links"
             href="https://vicible2.github.io/ho-ho-holiday/bingo/bingo.html"
+            target="_blank"
             >Live Demo</a
           >
           <a
             class="project-links"
             href="https://github.com/Vicible2/ho-ho-holiday"
+            target="_blank"
             >View Source Code</a
           >
         </div>
@@ -291,7 +298,7 @@
             ><span class="tooltiptext">copy email</span>
           </button>
         </div>
-        <a href="https://www.linkedin.com/in/wingtong-000/"
+        <a href="https://www.linkedin.com/in/wingtong-000/" target="_blank"
           ><i class="fab fa-linkedin-in"></i>
           www.linkedin.com/in/wingtong-000</a
         >
@@ -303,6 +310,18 @@
       
     
     </section>
+
+    <section class="cv-container">
+
+      <div id="cv-tab"></div>
+      <div class="cv-title">
+        <h2>Curriculum Vitae  </h2>
+      </div>
+      <div class="cv-img-container">
+          <img src="./assets/cv-img.png" alt="" class="cv-image">
+          <a class="cv-overlay" href="./assets/TONG,Wing Yan-CV.pdf" download><h5><i class="fas fa-file-download"></i><br>Click To Download My CV</h5></a>
+        </div>
+  </section>
     
 
     <footer>
