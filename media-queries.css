@@ -41,6 +41,12 @@
   .project-links {
     margin: 0.5rem 0;
   }
+  .contact-title h2{
+    font-size: 36px;
+  }
+  .contact-info p,.contact-info a {
+ font-size: 1rem;
+  }
 }
 @media screen and (max-width: 1024px) {
   .name {
@@ -110,11 +116,15 @@
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
-  .projects-title, .profile-title h3, .contact-title h2, .cv-title h2{
+  .projects-title, .profile-title h3, .cv-title h2{
       font-size: 36px;
   }
   .landing-container {
     height: 70vh;
+  }
+  .name {
+    font-size: 6rem;
+    text-shadow: -8px 8px var(--blue);
   }
   .profile-container {
     height: auto;
@@ -158,7 +168,8 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 680px) {
   .landing-container {
     height: 90vh;
   }
@@ -166,10 +177,7 @@
     padding: 0;
     margin: 0 auto;
   }
-  .name {
-    font-size: 6rem;
-    text-shadow: -8px 8px var(--blue);
-  }
+ 
   .title-container h1 {
     font-size: 3rem;
   }
@@ -186,6 +194,7 @@
   .profile-title {
     grid-column: 1/2;
   }
+ 
   .line-break {
     padding: 0;
   }
@@ -220,6 +229,10 @@
     grid-gap: 1.5rem;
     padding: 1rem 0;
   }
+  .project-text{
+      border-bottom: 1px solid var(--green);
+      padding-bottom: 2rem;
+  }
   .weather-app-img {
     grid-row: 3/4;
   }
@@ -230,6 +243,7 @@
     height: auto;
     flex-direction: column;
     overflow-y: hidden;
+    padding: 5rem 0;
   }
   .contact-title h2 {
     font-size: 36px;
@@ -259,7 +273,7 @@
       text-shadow: -1.5px 1.5px var(--blue);
   }
   .cv-img-container{
-      width: 80%;
+    width: 60%;
   }
   footer a {
     font-size: 0.5rem;
