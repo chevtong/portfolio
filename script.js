@@ -55,7 +55,7 @@ function addAnimation() {
     .querySelector(".projects-container")
     .getBoundingClientRect().top;
   const namePosition = document
-    .querySelector(".name-container")
+    .querySelector(".landing-container")
     .getBoundingClientRect().top;
   const contactsPosition = contactAnimation.getBoundingClientRect().top;
   const profilePosition = profileAnimation.getBoundingClientRect().top;
