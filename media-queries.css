@@ -110,6 +110,9 @@
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
+  .projects-title, .profile-title h3, .contact-title h2, .cv-title h2{
+      font-size: 36px;
+  }
   .landing-container {
     height: 70vh;
   }
@@ -120,10 +123,7 @@
   .profile-title h3 {
     padding: 2rem 0;
   }
-  .contacts-container {
-    width: 80%;
-    margin: auto;
-  }
+  
   .projects-title {
     padding: 2rem 0;
   }
@@ -145,8 +145,14 @@
   .contact-info {
     height: 10vh;
   }
+  .contact-info p,  .contact-info a{
+      font-size: 1rem;
+  }
   .profile-circle1 {
     width: 20%;
+  }
+  .cv-container{
+    padding-top: 0;
   }
   .cv-title {
     padding: 0;
@@ -243,6 +249,17 @@
     left: 0;
     opacity: 0.3;
     top: -20%;
+  }
+  .cv-container{
+      padding-bottom: 2rem;
+  }
+  .cv-title h2{
+      font-size: 24px;
+      padding: 2rem 0;
+      text-shadow: -1.5px 1.5px var(--blue);
+  }
+  .cv-img-container{
+      width: 80%;
   }
   footer a {
     font-size: 0.5rem;
