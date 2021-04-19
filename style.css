@@ -380,23 +380,34 @@ footer a:hover {
 .cv-container{
   background-color: #FCE9C5;
   background-image: url('./assets//cv-bg.png');
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+.cv-flexbox-container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
+  width: 70%;
+  margin: auto;
+  padding: 3rem 0;
 }
 .cv-title{
   padding: 2rem 0;
+ 
 }
 
 .cv-img-container {
   position: relative;
-  width: 30%;
+  width: 20%;
   border-radius: 13px;
-  margin: auto;
+  margin: 1rem;
+
+
 }
 
 .cv-image {
@@ -419,7 +430,7 @@ footer a:hover {
   height: 100%;
   transition: .5s ease;
   opacity:0;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   display: flex;
  

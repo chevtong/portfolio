@@ -160,9 +160,15 @@
   .profile-circle1 {
     width: 20%;
   }
-  .cv-container{
-    padding: 2rem;
+  .cv-flexbox-container{
+    width: 80%;
   }
+  .cv-title h2 {
+    font-size: 24px;
+    padding: 2rem 0;
+    text-shadow: -1.5px 1.5px var(--blue);
+  }
+  
 }
 
 @media screen and (max-width: 680px) {
@@ -260,16 +266,25 @@
     opacity: 0.3;
     top: -20%;
   }
-  .cv-container {
-    padding-bottom: 2rem;
+ 
+  .cv-flexbox-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    padding-top: 0;
+  }
+  .cv-title{
+    padding-bottom: 0;
   }
   .cv-title h2 {
     font-size: 24px;
-    padding: 2rem 0;
-    text-shadow: -1.5px 1.5px var(--blue);
+  }
+  .cv-img-container{
+    grid-row: 2/3;
   }
   .cv-img-container {
-    width: 60%;
+    width: 40%;
   }
   footer a {
     font-size: 0.5rem;

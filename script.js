@@ -88,7 +88,7 @@ function addAnimation() {
   }
 
   if (contactsPosition < 500 && contactsPosition > -200) {
-    console.log("toggle contactsTab")
+ 
     toggleNav(contactsTab);
   }
 
