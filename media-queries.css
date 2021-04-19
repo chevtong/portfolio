@@ -36,13 +36,14 @@
   .project-links {
     margin: 0.5rem 0;
   }
-  .contact-title h2 {
+  .contact-title h2, .cv-title h2 {
     font-size: 36px;
   }
   .contact-info p,
   .contact-info a {
     font-size: 1rem;
   }
+ 
 }
 @media screen and (max-width: 1024px) {
   .name {
@@ -113,9 +114,8 @@
     pointer-events: all;
   }
   .projects-title,
-  .profile-title h3,
-  .cv-title h2 {
-    font-size: 36px;
+  .profile-title h3 {
+        font-size: 36px;
   }
   .landing-container {
     height: 70vh;
@@ -160,11 +160,8 @@
   .profile-circle1 {
     width: 20%;
   }
-  .cv-container {
-    padding-top: 0;
-  }
-  .cv-title {
-    padding: 0;
+  .cv-container{
+    padding: 2rem;
   }
 }
 
