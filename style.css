@@ -78,7 +78,7 @@ nav {
   justify-content: center;
 }
 .name-container {
-  padding-left: 18%;
+  padding-left: 30%;
 }
 .name-container h1{
   color: var(--blue);
@@ -86,21 +86,21 @@ nav {
 .name {
   color: var(--yellow);
   text-transform: uppercase;
-  font-size: 13.5rem;
+  font-size: 144px;
   text-shadow: -13px 13px var(--blue);
   padding: 0.5rem;
 }
 
 .title-container {
   opacity: 0.25;
-  padding-left: 15%;
+  padding-left: 28%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
 .title-container h1 {
   color: #f4a817;
-  font-size: 6rem;
+  font-size: 72px;
   line-height: 80%;
   animation: appear 1s 1 ease-in-out;
 }
@@ -151,11 +151,11 @@ nav {
   margin: 0 3rem;
 }
 .skill-container h3 {
-  color: var(--pink);
+  color: #91b1aa;
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--light-pink);
+  border-bottom: 2px solid var(--pink);
   margin: 0 4rem;
   margin-bottom: 0.5rem;
 }
@@ -163,7 +163,7 @@ nav {
   text-align: center;
   padding: 0.3rem 0;
   font-weight: 500;
-  font-size: 1.5rem;
+
 }
 .pipe {
   margin: 0 1.5rem;
@@ -184,6 +184,7 @@ nav {
   color: var(--yellow);
   font-size: 64px;
   text-shadow: -3px 3px var(--blue);
+ 
 }
 .project-grid {
   width: 60%;

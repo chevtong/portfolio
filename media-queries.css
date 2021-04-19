@@ -32,12 +32,7 @@
   }
 }
 @media screen and (max-width: 1367px) {
-  .name {
-    font-size: 13.5rem;
-  }
-  .title-container h1 {
-    font-size: 4.5rem;
-  }
+ 
   .project-links {
     margin: 0.5rem 0;
   }

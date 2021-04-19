@@ -48,7 +48,7 @@ function addAnimation() {
   const cvTab = document.querySelector(".cv-tab");
 
   const cvPosition = document
-    .querySelector(".cv-container")
+    .querySelector(".cv-img-container")
     .getBoundingClientRect().top;
 
   const projectPostion = document
@@ -80,21 +80,25 @@ function addAnimation() {
   } else {
     projectAnimation.classList.remove("animation");
   }
+
   if (contactsPosition < screenPosition) {
     contactAnimation.classList.add("animation");
   } else {
     contactAnimation.classList.remove("animation");
   }
+
   if (contactsPosition < 500 && contactsPosition > -200) {
+    console.log("toggle contactsTab")
     toggleNav(contactsTab);
   }
 
   if (cvPosition < screenPosition) {
     cvAnimation.classList.add("animation");
-    toggleNav(cvTab);
+    toggleNav(cvTab)
   } else {
     cvAnimation.classList.remove("animation");
   }
+
 }
 
 function toggleNav(elem) {

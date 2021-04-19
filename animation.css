@@ -1,9 +1,11 @@
 /* class for animation and keyframes */
 .name-animation {
     animation: text-shadow-pop-bl 1s both;
+ 
   }
   .animation {
     animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+   
   }
   @keyframes tracking-in-expand {
     0% {
