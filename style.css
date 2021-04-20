@@ -39,6 +39,7 @@ body::-webkit-scrollbar-thumb {
 p {
   color: #91b1aa;
   line-height: 1.5;
+  
 }
 a {
   text-decoration: none;
@@ -166,6 +167,7 @@ nav {
 .contact-info {
   margin: 0 3rem;
 }
+
 .skill-container h3 {
   color: #91b1aa;
   text-align: center;
