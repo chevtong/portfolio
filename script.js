@@ -10,6 +10,7 @@ const thumbnailsImg2 = document.querySelectorAll(".project-img-thumbnail2");
 const mainImg1 = document.querySelector(".project-img-main1");
 const thumbnailsImg1 = document.querySelectorAll(".project-img-thumbnail1");
 
+
 thumbnailsImg.forEach((thumbnail) => {
   thumbnail.addEventListener("click", () => {
     mainImg.src = thumbnail.src;

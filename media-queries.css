@@ -32,18 +32,17 @@
   }
 }
 @media screen and (max-width: 1367px) {
- 
   .project-links {
     margin: 0.5rem 0;
   }
-  .contact-title h2, .cv-title h2 {
+  .contact-title h2,
+  .cv-title h2 {
     font-size: 36px;
   }
   .contact-info p,
   .contact-info a {
     font-size: 1rem;
   }
- 
 }
 @media screen and (max-width: 1024px) {
   .name {
@@ -68,7 +67,10 @@
     flex-wrap: wrap;
   }
   .overlay {
-    height: 60%;
+    display: none;
+  }
+  .project-button {
+    display: none;
   }
   .contact-title,
   .contact-info {
@@ -115,7 +117,7 @@
   }
   .projects-title,
   .profile-title h3 {
-        font-size: 36px;
+    font-size: 36px;
   }
   .landing-container {
     height: 70vh;
@@ -139,6 +141,7 @@
     width: 90%;
     grid-gap: 5rem 2rem;
   }
+
   .thumbnail-container {
     height: 10%;
   }
@@ -160,7 +163,7 @@
   .profile-circle1 {
     width: 20%;
   }
-  .cv-flexbox-container{
+  .cv-flexbox-container {
     width: 80%;
   }
   .cv-title h2 {
@@ -168,7 +171,6 @@
     padding: 2rem 0;
     text-shadow: -1.5px 1.5px var(--blue);
   }
-  
 }
 
 @media screen and (max-width: 680px) {
@@ -266,21 +268,21 @@
     opacity: 0.3;
     top: -20%;
   }
- 
-  .cv-flexbox-container{
+
+  .cv-flexbox-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     justify-items: center;
     padding-top: 0;
   }
-  .cv-title{
+  .cv-title {
     padding-bottom: 0;
   }
   .cv-title h2 {
     font-size: 24px;
   }
-  .cv-img-container{
+  .cv-img-container {
     grid-row: 2/3;
   }
   .cv-img-container {
