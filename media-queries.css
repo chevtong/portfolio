@@ -73,6 +73,7 @@
   .contact-title,
   .contact-info {
     margin: 0;
+    
   }
 }
 @media screen and (max-width: 768px) {
@@ -145,11 +146,9 @@
   }
   .contacts-container {
     height: 40vh;
-    width: 100%;
-    justify-content: space-around;
   }
   .contact-title h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
   .contact-info p,
   .contact-info a {
@@ -192,6 +191,10 @@
   }
   .profile-title {
     grid-column: 1/2;
+  }
+  .statment-container{
+    width: 80%;
+    margin: auto;
   }
 
   .line-break {
@@ -251,6 +254,7 @@
   }
   .contact-info {
     font-size: 0.7rem;
+    justify-content: space-around
     
   }
   .contact-info i {
