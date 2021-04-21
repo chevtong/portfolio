@@ -60,9 +60,7 @@
   .project-img-container {
     width: 100%;
   }
-  .project-text h4 {
-    font-size: 24px;
-  }
+ 
   .thumbnail-container {
     flex-wrap: wrap;
   }
@@ -152,9 +150,6 @@
   }
   .contact-title h2 {
     font-size: 36px;
-  }
-  .contact-info {
-    height: 10vh;
   }
   .contact-info p,
   .contact-info a {
@@ -256,7 +251,7 @@
   }
   .contact-info {
     font-size: 0.7rem;
-    padding-bottom: 2rem;
+    
   }
   .contact-info i {
     padding: 0.2rem;
